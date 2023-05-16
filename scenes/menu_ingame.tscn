@@ -1,0 +1,736 @@
+[gd_scene load_steps=11 format=3 uid="uid://dx7iikt2lc1wf"]
+
+[ext_resource type="Theme" uid="uid://dpcpuqlxm11ek" path="res://themes/basic_ui.tres" id="1_qds33"]
+[ext_resource type="Script" path="res://scenes/menu_ingame.gd" id="2_0u3gu"]
+
+[sub_resource type="Animation" id="Animation_2ij08"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("slidepanel/menu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(60, 410)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("slidepanel/menu:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_qo2g0"]
+resource_name = "in"
+length = 0.25
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("slidepanel/menu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(75, 410), Vector2(60, 410)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("slidepanel/menu:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_u71bj"]
+resource_name = "out"
+length = 0.25
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("slidepanel/menu:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("slidepanel/menu:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(60, 410), Vector2(75, 410)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_35iqg"]
+_data = {
+"RESET": SubResource("Animation_2ij08"),
+"in": SubResource("Animation_qo2g0"),
+"out": SubResource("Animation_u71bj")
+}
+
+[sub_resource type="Animation" id="Animation_lqxtq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("slidepanel/Save:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(428, 80)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("slidepanel/Save:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("slidepanel/Load:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(428, 80)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("slidepanel/Load:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_dv411"]
+resource_name = "in"
+length = 0.25
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("slidepanel/Save:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(428, 60), Vector2(428, 80)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("slidepanel/Save:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("slidepanel/Load:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(428, 60), Vector2(428, 80)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("slidepanel/Load:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_w8rwa"]
+resource_name = "out"
+length = 0.25
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("slidepanel/Save:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("slidepanel/Save:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(428, 80), Vector2(428, 60)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("slidepanel/Load:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("slidepanel/Load:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(428, 80), Vector2(428, 60)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ocgeq"]
+_data = {
+"RESET": SubResource("Animation_lqxtq"),
+"in": SubResource("Animation_dv411"),
+"out": SubResource("Animation_w8rwa")
+}
+
+[node name="PauseMenu" type="ColorRect"]
+process_mode = 3
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_qds33")
+color = Color(1, 1, 1, 0)
+script = ExtResource("2_0u3gu")
+
+[node name="slidepanel" type="ColorRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+color = Color(0.12549, 0.137255, 0.180392, 0.686275)
+
+[node name="ContinueButton" type="Button" parent="slidepanel"]
+custom_minimum_size = Vector2(185, 30)
+layout_mode = 0
+offset_left = 60.0
+offset_top = 30.0
+offset_right = 187.0
+offset_bottom = 65.0
+text = "KEY_CONTINUE"
+
+[node name="menu" type="VBoxContainer" parent="slidepanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 60.0
+offset_top = 410.0
+offset_right = 306.0
+offset_bottom = 625.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="MenuButton" type="Button" parent="slidepanel/menu"]
+custom_minimum_size = Vector2(127, 30)
+layout_mode = 2
+text = "KEY_MENU_BACK"
+
+[node name="SaveButton" type="Button" parent="slidepanel/menu"]
+custom_minimum_size = Vector2(127, 30)
+layout_mode = 2
+text = "KEY_SAVE"
+
+[node name="LoadButton" type="Button" parent="slidepanel/menu"]
+custom_minimum_size = Vector2(127, 30)
+layout_mode = 2
+text = "KEY_LOAD"
+
+[node name="Save" type="VBoxContainer" parent="slidepanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 428.0
+offset_top = 80.0
+offset_right = 1688.0
+offset_bottom = 697.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="Name" type="Label" parent="slidepanel/Save"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "KEY_SAVE"
+horizontal_alignment = 1
+
+[node name="Manual saves" type="Label" parent="slidepanel/Save"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "KEY_MANSAVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1strow" type="HBoxContainer" parent="slidepanel/Save"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="slidepanel/Save/1strow"]
+layout_mode = 2
+
+[node name="ManSaveBtn1" type="TextureButton" parent="slidepanel/Save/1strow/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/1strow/VBoxContainer"]
+layout_mode = 2
+text = "KEY_S1"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="slidepanel/Save/1strow"]
+layout_mode = 2
+
+[node name="ManSaveBtn2" type="TextureButton" parent="slidepanel/Save/1strow/VBoxContainer2"]
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/1strow/VBoxContainer2"]
+layout_mode = 2
+text = "KEY_S2"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="slidepanel/Save/1strow"]
+layout_mode = 2
+
+[node name="ManSaveBtn3" type="TextureButton" parent="slidepanel/Save/1strow/VBoxContainer3"]
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/1strow/VBoxContainer3"]
+layout_mode = 2
+text = "KEY_S3"
+horizontal_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="slidepanel/Save/1strow"]
+layout_mode = 2
+
+[node name="ManSaveBtn4" type="TextureButton" parent="slidepanel/Save/1strow/VBoxContainer4"]
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/1strow/VBoxContainer4"]
+layout_mode = 2
+text = "KEY_S4"
+horizontal_alignment = 1
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="slidepanel/Save/1strow"]
+layout_mode = 2
+
+[node name="ManSaveBtn5" type="TextureButton" parent="slidepanel/Save/1strow/VBoxContainer5"]
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/1strow/VBoxContainer5"]
+layout_mode = 2
+text = "KEY_S5"
+horizontal_alignment = 1
+
+[node name="Auto saves" type="Label" parent="slidepanel/Save"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "KEY_AUTOSAVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2ndrow" type="HBoxContainer" parent="slidepanel/Save"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="slidepanel/Save/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Save/2ndrow/VBoxContainer"]
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/2ndrow/VBoxContainer"]
+layout_mode = 2
+text = "KEY_S1"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="slidepanel/Save/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Save/2ndrow/VBoxContainer2"]
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/2ndrow/VBoxContainer2"]
+layout_mode = 2
+text = "KEY_S2"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="slidepanel/Save/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Save/2ndrow/VBoxContainer3"]
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/2ndrow/VBoxContainer3"]
+layout_mode = 2
+text = "KEY_S3"
+horizontal_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="slidepanel/Save/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Save/2ndrow/VBoxContainer4"]
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/2ndrow/VBoxContainer4"]
+layout_mode = 2
+text = "KEY_S4"
+horizontal_alignment = 1
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="slidepanel/Save/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Save/2ndrow/VBoxContainer5"]
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Save/2ndrow/VBoxContainer5"]
+layout_mode = 2
+text = "KEY_S5"
+horizontal_alignment = 1
+
+[node name="Load" type="VBoxContainer" parent="slidepanel"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 428.0
+offset_top = 80.0
+offset_right = 1688.0
+offset_bottom = 697.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="Name" type="Label" parent="slidepanel/Load"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "KEY_LOAD"
+horizontal_alignment = 1
+
+[node name="Manual saves" type="Label" parent="slidepanel/Load"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "KEY_MANSAVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1strow" type="HBoxContainer" parent="slidepanel/Load"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="slidepanel/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn1" type="TextureButton" parent="slidepanel/Load/1strow/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+size_flags_vertical = 3
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/1strow/VBoxContainer"]
+layout_mode = 2
+text = "KEY_S1"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="slidepanel/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn2" type="TextureButton" parent="slidepanel/Load/1strow/VBoxContainer2"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/1strow/VBoxContainer2"]
+layout_mode = 2
+text = "KEY_S2"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="slidepanel/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn3" type="TextureButton" parent="slidepanel/Load/1strow/VBoxContainer3"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/1strow/VBoxContainer3"]
+layout_mode = 2
+text = "KEY_S3"
+horizontal_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="slidepanel/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn4" type="TextureButton" parent="slidepanel/Load/1strow/VBoxContainer4"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/1strow/VBoxContainer4"]
+layout_mode = 2
+text = "KEY_S4"
+horizontal_alignment = 1
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="slidepanel/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn5" type="TextureButton" parent="slidepanel/Load/1strow/VBoxContainer5"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/1strow/VBoxContainer5"]
+layout_mode = 2
+text = "KEY_S5"
+horizontal_alignment = 1
+
+[node name="Auto saves" type="Label" parent="slidepanel/Load"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "KEY_AUTOSAVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2ndrow" type="HBoxContainer" parent="slidepanel/Load"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="slidepanel/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Load/2ndrow/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/2ndrow/VBoxContainer"]
+layout_mode = 2
+text = "KEY_S1"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="slidepanel/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Load/2ndrow/VBoxContainer2"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/2ndrow/VBoxContainer2"]
+layout_mode = 2
+text = "KEY_S2"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="slidepanel/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Load/2ndrow/VBoxContainer3"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/2ndrow/VBoxContainer3"]
+layout_mode = 2
+text = "KEY_S3"
+horizontal_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="slidepanel/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Load/2ndrow/VBoxContainer4"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/2ndrow/VBoxContainer4"]
+layout_mode = 2
+text = "KEY_S4"
+horizontal_alignment = 1
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="slidepanel/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="slidepanel/Load/2ndrow/VBoxContainer5"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="slidepanel/Load/2ndrow/VBoxContainer5"]
+layout_mode = 2
+text = "KEY_S5"
+horizontal_alignment = 1
+
+[node name="Menu" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_35iqg")
+}
+
+[node name="Content" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ocgeq")
+}
+
+[connection signal="pressed" from="slidepanel/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="slidepanel/menu/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="slidepanel/menu/SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="slidepanel/menu/LoadButton" to="." method="_on_load_button_pressed"]
+[connection signal="pressed" from="slidepanel/Save/1strow/VBoxContainer/ManSaveBtn1" to="." method="_on_man_save_btn_1_pressed"]
+[connection signal="pressed" from="slidepanel/Save/1strow/VBoxContainer2/ManSaveBtn2" to="." method="_on_man_save_btn_2_pressed"]
+[connection signal="pressed" from="slidepanel/Save/1strow/VBoxContainer3/ManSaveBtn3" to="." method="_on_man_save_btn_3_pressed"]
+[connection signal="pressed" from="slidepanel/Save/1strow/VBoxContainer4/ManSaveBtn4" to="." method="_on_man_save_btn_4_pressed"]
+[connection signal="pressed" from="slidepanel/Save/1strow/VBoxContainer5/ManSaveBtn5" to="." method="_on_man_save_btn_5_pressed"]
+[connection signal="pressed" from="slidepanel/Save/2ndrow/VBoxContainer/TextureRect" to="." method="_on_texture_rect_pressed"]
+[connection signal="pressed" from="slidepanel/Save/2ndrow/VBoxContainer2/TextureRect" to="." method="_on_texture_rect_pressed"]
+[connection signal="pressed" from="slidepanel/Save/2ndrow/VBoxContainer3/TextureRect" to="." method="_on_texture_rect_pressed"]
+[connection signal="pressed" from="slidepanel/Save/2ndrow/VBoxContainer4/TextureRect" to="." method="_on_texture_rect_pressed"]
+[connection signal="pressed" from="slidepanel/Save/2ndrow/VBoxContainer5/TextureRect" to="." method="_on_texture_rect_pressed"]
+[connection signal="pressed" from="slidepanel/Load/1strow/VBoxContainer/ManLoadBtn1" to="." method="_on_man_load_btn_1_pressed"]
+[connection signal="pressed" from="slidepanel/Load/1strow/VBoxContainer2/ManLoadBtn2" to="." method="_on_man_load_btn_2_pressed"]
+[connection signal="pressed" from="slidepanel/Load/1strow/VBoxContainer3/ManLoadBtn3" to="." method="_on_man_load_btn_3_pressed"]
+[connection signal="pressed" from="slidepanel/Load/1strow/VBoxContainer4/ManLoadBtn4" to="." method="_on_man_load_btn_4_pressed"]
+[connection signal="pressed" from="slidepanel/Load/1strow/VBoxContainer5/ManLoadBtn5" to="." method="_on_man_load_btn_5_pressed"]

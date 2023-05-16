@@ -1,0 +1,100 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Diplom"
+run/main_scene="res://scenes/loadingscreen.tscn"
+config/features=PackedStringArray("4.0", "C#", "Forward Plus")
+config/icon="res://icon.png"
+
+[autoload]
+
+Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
+Loadingqazzz="*res://saves/loading.gd"
+Loadingscreenqazzz="*res://scenes/loadingscreen.gd"
+BackGroundMusicqazzz="*res://scenes/back_ground_music.tscn"
+
+[dialogic]
+
+editor/character_preview_mode=0
+editor/current_editor=&"Timeline Editor"
+editor/current_resources={
+"Character Editor": "res://characters/Maya.dch",
+"Timeline Editor": "res://timelines/firstchapter.dtl"
+}
+editor/last_resources=PackedStringArray("res://timelines/firstchapter.dtl", "res://characters/Maya.dch", "res://timelines/fullgame.dtl", "res://characters/Emily.dch", "res://characters/Lector.dch", "res://timelines/timeline(handart).dtl", "res://timelines/firstchapter(handart).dtl")
+animations/join_default_length=0.5
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/join_default_wait=true
+choices/autofocus_first=true
+choices/delay=0.2
+save/autosave_delay=180.0
+text/speed=0.01
+text/skippable=true
+text/autocontinue_delay=1.0
+editor/visual_timeline_editor_sidebar=200.0
+editor/last/resources=["res://timelines/firstchapter.dtl", "res://characters/Maya.dch", "res://timelines/fullgame.dtl", "res://characters/Emily.dch", "res://characters/Lector.dch", "res://timelines/timeline(handart).dtl", "res://timelines/firstchapter(handart).dtl"]
+glossary/default_case_sensitive=true
+save/default_slot="0"
+save/autosave=false
+history/simple_history_enabled=true
+history/full_history_enabled=true
+history/already_read_history_enabled=true
+layout/mode=1
+variables={}
+layout/layout_scene="res://oksdaddyd/CustomDefaultLayout/custom_DialogicDefaultLayout.tscn"
+translation/enabled=false
+translation/original_locale="en"
+translation/file_mode=0
+translation/translation_folder="res://translations"
+text/autocontinue=false
+save/autosave_mode=1
+editor/timeline_editor_mode=0
+editor/current_timeline_path="res://timelines/firstchapter(handart).dtl"
+translation/id_counter=16
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/size/resizable=false
+window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="Diplom"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[input]
+
+dialogic_default_action={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":4194309,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"pressed":true,"double_click":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":32,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":88,"physical_keycode":0,"key_label":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+]
+}
+esc={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://translation.en.translation", "res://translation.ru.translation")

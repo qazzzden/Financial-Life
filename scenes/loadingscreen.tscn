@@ -1,0 +1,215 @@
+[gd_scene load_steps=12 format=3 uid="uid://b8og85aunof1v"]
+
+[ext_resource type="Script" path="res://scenes/loadingscreen.gd" id="1_4jhwc"]
+[ext_resource type="Theme" uid="uid://dpcpuqlxm11ek" path="res://themes/basic_ui.tres" id="1_lap3l"]
+[ext_resource type="FontFile" uid="uid://cjq0n82tjd0w1" path="res://!!media/fonts/Longstory-7BrOl.ttf" id="3_0na6h"]
+[ext_resource type="Texture2D" uid="uid://4h3anxi7cmsu" path="res://!!media/actualgame/backgrounds/background.png" id="3_e58dw"]
+[ext_resource type="Script" path="res://scenes/loadingscreenhandler.gd" id="4_ybdfn"]
+
+[sub_resource type="Animation" id="Animation_y0qkt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect/NameOfGame:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ae1js"]
+resource_name = "cycle1"
+length = 1.4
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect/NameOfGame:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.08, 1.08), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rdshw"]
+_data = {
+"RESET": SubResource("Animation_y0qkt"),
+"cycle1": SubResource("Animation_ae1js")
+}
+
+[sub_resource type="Animation" id="Animation_mm3li"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect/ProgressBar:value")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect/Button:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect/NameOfGame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8ssct"]
+resource_name = "appear"
+length = 1.1
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect/ProgressBar:value")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 100.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect/Button:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.9, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect/NameOfGame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iygto"]
+_data = {
+"RESET": SubResource("Animation_mm3li"),
+"appear": SubResource("Animation_8ssct")
+}
+
+[node name="Loadingscreen" type="Control" groups=["Persist"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_lap3l")
+script = ExtResource("1_4jhwc")
+
+[node name="ColorRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_e58dw")
+expand_mode = 1
+script = ExtResource("4_ybdfn")
+
+[node name="ProgressBar" type="ProgressBar" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -27.0
+offset_right = 23.0
+grow_horizontal = 2
+grow_vertical = 0
+step = 8.0
+
+[node name="NameOfGame" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -384.5
+offset_top = -420.0
+offset_right = 395.5
+offset_bottom = -290.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(390, 65)
+theme_override_fonts/font = ExtResource("3_0na6h")
+theme_override_font_sizes/font_size = 80
+text = "Financial Life"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -25.0
+offset_right = 60.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(81, 25)
+text = "KEY_START"
+
+[node name="Cycle" type="AnimationPlayer" parent="."]
+autoplay = "cycle1"
+libraries = {
+"": SubResource("AnimationLibrary_rdshw")
+}
+
+[node name="Animofappear" type="AnimationPlayer" parent="."]
+autoplay = "appear"
+libraries = {
+"": SubResource("AnimationLibrary_iygto")
+}
+
+[connection signal="pressed" from="ColorRect/Button" to="ColorRect" method="_on_button_pressed"]

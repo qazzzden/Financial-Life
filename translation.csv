@@ -1,0 +1,31 @@
+keys,en,ru
+KEY_NEWGAME,New game,Новая игра
+KEY_START,Start,Старт
+KEY_MENU_BACK,Menu,В меню
+KEY_LANG,Language,Язык
+KEY_AUDIO,Audio,Звук
+KEY_DISPLAY,Display options,Экран
+KEY_TEXT_SET,Text settings,Текст
+KEY_ART,Art style,Художественный стиль
+KEY_APPLY,Apply,Применить
+KEY_AUTOSKIP,Auto skip,Авто пропуск
+KEY_SETTINGS,Settings,Настройки
+KEY_CREDITS,Credits,Титры
+KEY_EXIT,Exit,Выход
+KEY_MV,Music Volume,Музыка
+KEY_SV,Sound Volume,Общий
+,,
+KEY_LOAD,Load,Загрузить
+KEY_MANSAVE,Saves,Сохранения
+KEY_AUTOSAVE,Auto saves,Автосохранение
+KEY_S1,Save 1,Сохранение 1
+KEY_S2,Save 2,Сохранение 2
+KEY_S3,Save 3,Сохранение 3
+KEY_S4,Save 4,Сохранение 4
+KEY_S5,Save 5,Сохранение 5
+KEY_CONTINUE,Continue,Продолжить
+KEY_SAVE,Save,Сохранить
+KEY_FULLS,Fullscreen,Полноэкранный
+KEY_WINDOWED,Windowed,Оконный
+KEY_ARTSTYLE1,AI generated,AI
+KEY_ARTSTYLE2,Hand art,Авторский

@@ -1,0 +1,707 @@
+[gd_scene load_steps=8 format=3 uid="uid://ckbryfskngthd"]
+
+[ext_resource type="Theme" uid="uid://dpcpuqlxm11ek" path="res://themes/basic_ui.tres" id="1_p4g2t"]
+[ext_resource type="Script" path="res://scenes/settings.gd" id="1_t7u3p"]
+[ext_resource type="Theme" uid="uid://1mc4nacar8us" path="res://themes/flatbuttons.tres" id="3_gjx8i"]
+[ext_resource type="Texture2D" uid="uid://4h3anxi7cmsu" path="res://!!media/actualgame/backgrounds/background.png" id="3_reigc"]
+
+[sub_resource type="Animation" id="Animation_wkrej"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BackGround/ApplyButton:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BackGround/Art style:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BackGround/Skip Options:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BackGround/Display Options:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackGround/Music controls:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BackGround/Language:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("BackGround/Language:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(210, 390)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("BackGround/Music controls:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(510, 390)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("BackGround/Display Options:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(810, 390)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("BackGround/Skip Options:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1110, 390)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("BackGround/Art style:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1410, 390)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("BackGround/ApplyButton:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_quqy0"]
+resource_name = "apper"
+length = 0.95
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BackGround/ApplyButton:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BackGround/Art style:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.65, 0.95),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BackGround/Skip Options:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.5, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BackGround/Display Options:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.35, 0.65),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("BackGround/Music controls:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("BackGround/Language:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.05, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("BackGround/Language:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.05, 0.35),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(210, 370), Vector2(210, 390)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("BackGround/Music controls:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.2, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(510, 370), Vector2(510, 390)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("BackGround/Display Options:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.35, 0.65),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(810, 370), Vector2(810, 390)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("BackGround/Skip Options:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0.5, 0.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1110, 370), Vector2(1110, 390)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("BackGround/Art style:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0.65, 0.95),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1410, 370), Vector2(1410, 390)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("BackGround/ApplyButton:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0.85, 0.95),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_757jd"]
+_data = {
+"RESET": SubResource("Animation_wkrej"),
+"apper": SubResource("Animation_quqy0")
+}
+
+[node name="Settings" type="Control" groups=["Persist"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_p4g2t")
+script = ExtResource("1_t7u3p")
+
+[node name="BackGround" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_reigc")
+expand_mode = 1
+
+[node name="Language" type="Control" parent="BackGround"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 210.0
+offset_top = 390.0
+offset_right = 510.0
+offset_bottom = 690.001
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Language"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="Name of section" type="Label" parent="BackGround/Language/VBoxContainer"]
+layout_mode = 2
+text = "KEY_LANG"
+horizontal_alignment = 1
+
+[node name="Spacing" type="Control" parent="BackGround/Language/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BackGround/Language/VBoxContainer"]
+layout_mode = 2
+
+[node name="Auto skip" type="Label" parent="BackGround/Language/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(175, 35)
+layout_mode = 2
+text = "KEY_LANG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CheckBox" type="OptionButton" parent="BackGround/Language/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+auto_translate = false
+theme_override_font_sizes/font_size = 20
+flat = true
+
+[node name="Music controls" type="Control" parent="BackGround"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 510.0
+offset_top = 390.0
+offset_right = 810.0
+offset_bottom = 690.001
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Music controls"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="Name of section" type="Label" parent="BackGround/Music controls/VBoxContainer"]
+layout_mode = 2
+text = "KEY_AUDIO"
+horizontal_alignment = 1
+
+[node name="Spacing" type="Control" parent="BackGround/Music controls/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Music Volume" type="Label" parent="BackGround/Music controls/VBoxContainer"]
+custom_minimum_size = Vector2(175, 35)
+layout_mode = 2
+text = "KEY_MV"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MusicCtrl" type="HSlider" parent="BackGround/Music controls/VBoxContainer"]
+layout_mode = 2
+value = 50.0
+
+[node name="Sound Volume" type="Label" parent="BackGround/Music controls/VBoxContainer"]
+custom_minimum_size = Vector2(175, 35)
+layout_mode = 2
+text = "KEY_SV"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SoundCtrl" type="HSlider" parent="BackGround/Music controls/VBoxContainer"]
+layout_mode = 2
+value = 50.0
+
+[node name="Display Options" type="Control" parent="BackGround"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 810.0
+offset_top = 390.0
+offset_right = 1110.0
+offset_bottom = 690.001
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Display Options"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="Name of section" type="Label" parent="BackGround/Display Options/VBoxContainer"]
+layout_mode = 2
+text = "KEY_DISPLAY"
+horizontal_alignment = 1
+
+[node name="Spacing" type="Control" parent="BackGround/Display Options/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BackGround/Display Options/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ResolutionDownButton" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_gjx8i")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+text = "<"
+flat = true
+
+[node name="WindowsizeLabel" type="Label" parent="BackGround/Display Options/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(175, 35)
+layout_mode = 2
+text = "testin1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResolutionUpButton" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_gjx8i")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+text = ">"
+flat = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="BackGround/Display Options/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Fullscreendown" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("3_gjx8i")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+text = "<"
+flat = true
+
+[node name="FullscreenLabel" type="Label" parent="BackGround/Display Options/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(175, 35)
+layout_mode = 2
+text = "testin1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fullscreenup" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("3_gjx8i")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+text = ">"
+flat = true
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="BackGround/Display Options/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Vsyncdown" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+theme = ExtResource("3_gjx8i")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+text = "<"
+flat = true
+
+[node name="VsyncLabel" type="Label" parent="BackGround/Display Options/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(175, 35)
+layout_mode = 2
+text = "testin1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Vsyncscreenup" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+theme = ExtResource("3_gjx8i")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+text = ">"
+flat = true
+
+[node name="Skip Options" type="Control" parent="BackGround"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1110.0
+offset_top = 390.0
+offset_right = 1410.0
+offset_bottom = 690.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Skip Options"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="Name of section" type="Label" parent="BackGround/Skip Options/VBoxContainer"]
+layout_mode = 2
+text = "KEY_TEXT_SET"
+horizontal_alignment = 1
+
+[node name="Spacing" type="Control" parent="BackGround/Skip Options/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BackGround/Skip Options/VBoxContainer"]
+layout_mode = 2
+
+[node name="Auto skip" type="Label" parent="BackGround/Skip Options/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(175, 35)
+layout_mode = 2
+text = "KEY_AUTOSKIP"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CheckBox" type="CheckBox" parent="BackGround/Skip Options/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Art style" type="Control" parent="BackGround"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1410.0
+offset_top = 390.0
+offset_right = 1710.0
+offset_bottom = 690.001
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Art style"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 5
+
+[node name="Name of section" type="Label" parent="BackGround/Art style/VBoxContainer"]
+layout_mode = 2
+text = "KEY_ART"
+horizontal_alignment = 1
+
+[node name="Spacing" type="Control" parent="BackGround/Art style/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BackGround/Art style/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ArtDownButton" type="Button" parent="BackGround/Art style/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_gjx8i")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+text = "<"
+flat = true
+
+[node name="ArtLabel" type="Label" parent="BackGround/Art style/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(175, 35)
+layout_mode = 2
+text = "testin1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArtUpButton" type="Button" parent="BackGround/Art style/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_gjx8i")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+text = ">"
+flat = true
+
+[node name="Menu" type="Button" parent="BackGround"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 30.0
+offset_right = 245.0
+offset_bottom = 70.0
+text = "KEY_MENU_BACK"
+
+[node name="ApplyButton" type="Button" parent="BackGround"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = 260.0
+offset_right = 50.0
+offset_bottom = 295.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "KEY_APPLY"
+
+[node name="Appear" type="AnimationPlayer" parent="."]
+autoplay = "apper"
+libraries = {
+"": SubResource("AnimationLibrary_757jd")
+}
+
+[connection signal="item_selected" from="BackGround/Language/VBoxContainer/HBoxContainer/CheckBox" to="." method="_on_check_box_item_selected"]
+[connection signal="value_changed" from="BackGround/Music controls/VBoxContainer/MusicCtrl" to="." method="_on_music_ctrl_value_changed"]
+[connection signal="value_changed" from="BackGround/Music controls/VBoxContainer/SoundCtrl" to="." method="_on_sound_ctrl_value_changed"]
+[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer/ResolutionDownButton" to="." method="_on_resolution_down_button_pressed"]
+[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer/ResolutionUpButton" to="." method="_on_resolution_up_button_pressed"]
+[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer2/Fullscreendown" to="." method="_on_fullscreendown_pressed"]
+[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer2/Fullscreenup" to="." method="_on_fullscreenup_pressed"]
+[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer3/Vsyncdown" to="." method="_on_vsyncdown_pressed"]
+[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer3/Vsyncscreenup" to="." method="_on_vsyncscreenup_pressed"]
+[connection signal="pressed" from="BackGround/Art style/VBoxContainer/HBoxContainer/ArtDownButton" to="." method="_on_art_down_button_pressed"]
+[connection signal="pressed" from="BackGround/Art style/VBoxContainer/HBoxContainer/ArtUpButton" to="." method="_on_art_up_button_pressed"]
+[connection signal="pressed" from="BackGround/Menu" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="BackGround/ApplyButton" to="." method="_on_apply_button_pressed"]

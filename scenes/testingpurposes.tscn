@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://k8dxh7c7t3rx"]
+
+[ext_resource type="PackedScene" uid="uid://ce2t0l1e27i65" path="res://addons/dialogic/Events/History/settings_history.tscn" id="1_oy0q1"]
+[ext_resource type="PackedScene" path="res://addons/dialogic/Events/Text/settings_text.tscn" id="2_qqwg6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="History" parent="." instance=ExtResource("1_oy0q1")]
+visible = false
+layout_mode = 1
+offset_left = 70.0
+offset_top = 401.0
+offset_right = 70.0
+offset_bottom = 401.0
+
+[node name="DialogText" parent="." instance=ExtResource("2_qqwg6")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+offset_left = 41.0
+offset_top = 325.0
+offset_right = 41.0
+offset_bottom = 325.0
+grow_horizontal = 2
+grow_vertical = 2

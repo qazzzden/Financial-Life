@@ -1,0 +1,445 @@
+[gd_scene load_steps=11 format=3 uid="uid://d2yodtfvd26x3"]
+
+[ext_resource type="Script" path="res://scenes/load_startnew.cs" id="1_b6w84"]
+[ext_resource type="Theme" uid="uid://dpcpuqlxm11ek" path="res://themes/basic_ui.tres" id="1_qdwcs"]
+[ext_resource type="Texture2D" uid="uid://4h3anxi7cmsu" path="res://!!media/actualgame/backgrounds/background.png" id="3_xq3dn"]
+
+[sub_resource type="Animation" id="Animation_voyxb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Menu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(60, 410)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Menu:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_hggi8"]
+resource_name = "start"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Menu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1.25, 1.25),
+"update": 0,
+"values": [Vector2(80, 410), Vector2(60, 410)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Menu:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1.25, 1.25),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rhfra"]
+_data = {
+"RESET": SubResource("Animation_voyxb"),
+"start": SubResource("Animation_hggi8")
+}
+
+[sub_resource type="Animation" id="Animation_f87n7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Load:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(428, 80)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Load:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/Load:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_mdk51"]
+resource_name = "easyin"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Load:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(428, 40), Vector2(428, 80)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Load:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_qjxm4"]
+resource_name = "easyout"
+length = 0.25
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Load:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(428, 60), Vector2(428, 40)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Background/Load:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Background/Load:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.19, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g4t4c"]
+_data = {
+"RESET": SubResource("Animation_f87n7"),
+"easyin": SubResource("Animation_mdk51"),
+"easyout": SubResource("Animation_qjxm4")
+}
+
+[node name="Loading" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_qdwcs")
+script = ExtResource("1_b6w84")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_xq3dn")
+expand_mode = 1
+
+[node name="Menu" type="VBoxContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 60.0
+offset_top = -130.0
+offset_right = 245.0
+offset_bottom = 30.0
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Newgame" type="Button" parent="Background/Menu"]
+custom_minimum_size = Vector2(125, 30)
+layout_mode = 2
+text = "KEY_NEWGAME"
+
+[node name="Load" type="Button" parent="Background/Menu"]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+text = "KEY_LOAD"
+
+[node name="Menu" type="Button" parent="Background/Menu"]
+custom_minimum_size = Vector2(125, 30)
+layout_mode = 2
+text = "KEY_MENU_BACK"
+
+[node name="Load" type="VBoxContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 428.0
+offset_top = 80.0
+offset_right = 1688.0
+offset_bottom = 697.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="Name" type="Label" parent="Background/Load"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "KEY_LOAD"
+horizontal_alignment = 1
+
+[node name="Manual saves" type="Label" parent="Background/Load"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "KEY_MANSAVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="1strow" type="HBoxContainer" parent="Background/Load"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn1" type="TextureButton" parent="Background/Load/1strow/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+size_flags_vertical = 3
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/1strow/VBoxContainer"]
+layout_mode = 2
+text = "KEY_S1"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Background/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn2" type="TextureButton" parent="Background/Load/1strow/VBoxContainer2"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/1strow/VBoxContainer2"]
+layout_mode = 2
+text = "KEY_S2"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Background/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn3" type="TextureButton" parent="Background/Load/1strow/VBoxContainer3"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/1strow/VBoxContainer3"]
+layout_mode = 2
+text = "KEY_S3"
+horizontal_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Background/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn4" type="TextureButton" parent="Background/Load/1strow/VBoxContainer4"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/1strow/VBoxContainer4"]
+layout_mode = 2
+text = "KEY_S4"
+horizontal_alignment = 1
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="Background/Load/1strow"]
+layout_mode = 2
+
+[node name="ManLoadBtn5" type="TextureButton" parent="Background/Load/1strow/VBoxContainer5"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/1strow/VBoxContainer5"]
+layout_mode = 2
+text = "KEY_S5"
+horizontal_alignment = 1
+
+[node name="Auto saves" type="Label" parent="Background/Load"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "KEY_AUTOSAVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2ndrow" type="HBoxContainer" parent="Background/Load"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="Background/Load/2ndrow/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/2ndrow/VBoxContainer"]
+layout_mode = 2
+text = "KEY_S1"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Background/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="Background/Load/2ndrow/VBoxContainer2"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/2ndrow/VBoxContainer2"]
+layout_mode = 2
+text = "KEY_S2"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Background/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="Background/Load/2ndrow/VBoxContainer3"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/2ndrow/VBoxContainer3"]
+layout_mode = 2
+text = "KEY_S3"
+horizontal_alignment = 1
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="Background/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="Background/Load/2ndrow/VBoxContainer4"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/2ndrow/VBoxContainer4"]
+layout_mode = 2
+text = "KEY_S4"
+horizontal_alignment = 1
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="Background/Load/2ndrow"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureButton" parent="Background/Load/2ndrow/VBoxContainer5"]
+clip_contents = true
+custom_minimum_size = Vector2(240, 135)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Background/Load/2ndrow/VBoxContainer5"]
+layout_mode = 2
+text = "KEY_S5"
+horizontal_alignment = 1
+
+[node name="Start" type="AnimationPlayer" parent="."]
+autoplay = "start"
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_rhfra")
+}
+
+[node name="Appear" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_g4t4c")
+}
+
+[connection signal="pressed" from="Background/Menu/Newgame" to="." method="_on_newgame_pressed"]
+[connection signal="pressed" from="Background/Menu/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="Background/Menu/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Background/Load/1strow/VBoxContainer/ManLoadBtn1" to="." method="_on_man_load_btn_1_pressed"]
+[connection signal="pressed" from="Background/Load/1strow/VBoxContainer2/ManLoadBtn2" to="." method="_on_man_load_btn_2_pressed"]
+[connection signal="pressed" from="Background/Load/1strow/VBoxContainer3/ManLoadBtn3" to="." method="_on_man_load_btn_3_pressed"]
+[connection signal="pressed" from="Background/Load/1strow/VBoxContainer4/ManLoadBtn4" to="." method="_on_man_load_btn_4_pressed"]
+[connection signal="pressed" from="Background/Load/1strow/VBoxContainer5/ManLoadBtn5" to="." method="_on_man_load_btn_5_pressed"]

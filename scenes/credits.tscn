@@ -1,0 +1,148 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvle1iuos73l3"]
+
+[ext_resource type="Theme" uid="uid://dpcpuqlxm11ek" path="res://themes/basic_ui.tres" id="1_0t24g"]
+[ext_resource type="Script" path="res://scenes/credits.cs" id="2_xqqn5"]
+[ext_resource type="Texture2D" uid="uid://4h3anxi7cmsu" path="res://!!media/actualgame/backgrounds/background.png" id="3_0vllj"]
+
+[sub_resource type="Animation" id="Animation_6e22b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Titles:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(156.5, -1832)]
+}
+
+[sub_resource type="Animation" id="Animation_1ncwe"]
+resource_name = "Ttilemove"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Titles:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 20),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(156.5, 1086), Vector2(156.5, -1832)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2tmna"]
+_data = {
+"RESET": SubResource("Animation_6e22b"),
+"Ttilemove": SubResource("Animation_1ncwe")
+}
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_0t24g")
+script = ExtResource("2_xqqn5")
+
+[node name="ColorRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_0vllj")
+expand_mode = 1
+
+[node name="Menu" type="Button" parent="ColorRect"]
+custom_minimum_size = Vector2(155, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -923.5
+offset_top = -508.0
+offset_right = -723.5
+offset_bottom = -458.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "KEY_MENU_BACK"
+
+[node name="Titles" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 156.5
+offset_top = -1832.0
+offset_right = 1763.5
+offset_bottom = 29161.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Financial Life
+
+Developed by
+
+Produced by Daniil Derkach
+
+Directed by Daniil Derkach
+
+Game Designers
+Daniil Derkach
+
+Lead Programmer
+Daniil Derkach
+
+Art Director
+Daniil Derkach
+
+Artists
+Daniil Derkach
+
+Sound Designer
+Daniil Derkach
+
+Writers
+Daniil Derkach
+
+Testing team
+Daniil Derkach
+
+Localization
+Daniil Derkach
+
+Marketing
+Daniil Derkach
+
+Special Thanks
+
+Legal and Compliance
+Uses Godot Engine © 2007-2023 Juan Linietsky, Ariel Manzur and the Godot community. Licensed under the MIT License.
+
+Uses open-source libraries:
+
+OpenAL Soft © 2000-2023 Chris Robinson. Licensed under the LGPL.
+
+Ogg Vorbis © 2002-2023 Xiph.org Foundation. Licensed under the BSD license.
+Opus © 2002-2023 Xiph.org Foundation and contributors. Licensed under the BSD license.
+
+"
+horizontal_alignment = 1
+
+[node name="Creditos" type="AnimationPlayer" parent="ColorRect"]
+libraries = {
+"": SubResource("AnimationLibrary_2tmna")
+}
+
+[connection signal="pressed" from="ColorRect/Menu" to="." method="_on_menu_pressed"]
