@@ -21,7 +21,7 @@ public partial class load_startnew : Control
 		load3 = GetNode<TextureButton>("Background/Load/1strow/VBoxContainer3/ManLoadBtn3");
 		load4 = GetNode<TextureButton>("Background/Load/1strow/VBoxContainer4/ManLoadBtn4");
 		load5 = GetNode<TextureButton>("Background/Load/1strow/VBoxContainer5/ManLoadBtn5");
-		
+		loadscreen.Visible=false;
 		anim = GetNode<AnimationPlayer>("Appear");
 		
 		Godot.TextureButton[] saves={load1,load2,load3,load4,load5};
@@ -59,7 +59,8 @@ private void _on_menu_pressed()
 
 private void _on_newgame_pressed()
 {
-	loadi.Set("scener","res://scenes/game.tscn");
+	loadi.Set("loads","none");
+	loadi.Set("scener","res://scenes/game_load.tscn");
 	GetTree().ChangeSceneToFile("res://scenes/loadinganim.tscn");
 }
 

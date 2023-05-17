@@ -14,7 +14,6 @@ func _ready():
 func _process(delta):
 	scene_laod_status=ResourceLoader.load_threaded_get_status(scene,progress)
 	progbar.value=progress[0]*100
-	print(progbar.value)
 	if scene_laod_status==ResourceLoader.THREAD_LOAD_LOADED:
 		get_tree().change_scene_to_packed(ResourceLoader.load_threaded_get(scene))
 		queue_free()

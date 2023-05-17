@@ -4,6 +4,8 @@ extends Control
 @onready var gamedata=Loadingqazzz.game_data
 
 func _ready():
+	#Global variables fixer
+	
 	
 	#Language settings
 	TranslationServer.set_locale(gamedata.Language)
@@ -24,7 +26,6 @@ func _ready():
 	else:
 		AudioServer.set_bus_mute(1,false)
 		AudioServer.set_bus_volume_db(1,(valueM-50)/3)
-
 	var valueA=gamedata.MasterSound
 	if valueA==0:
 		AudioServer.set_bus_mute(0,true)
@@ -34,3 +35,6 @@ func _ready():
 	else:
 		AudioServer.set_bus_mute(0,false)
 		AudioServer.set_bus_volume_db(0,(valueA-50)/3)
+
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

@@ -1,10 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://b8og85aunof1v"]
+[gd_scene load_steps=11 format=3 uid="uid://b8og85aunof1v"]
 
 [ext_resource type="Script" path="res://scenes/loadingscreen.gd" id="1_4jhwc"]
 [ext_resource type="Theme" uid="uid://dpcpuqlxm11ek" path="res://themes/basic_ui.tres" id="1_lap3l"]
 [ext_resource type="FontFile" uid="uid://cjq0n82tjd0w1" path="res://!!media/fonts/Longstory-7BrOl.ttf" id="3_0na6h"]
 [ext_resource type="Texture2D" uid="uid://4h3anxi7cmsu" path="res://!!media/actualgame/backgrounds/background.png" id="3_e58dw"]
-[ext_resource type="Script" path="res://scenes/loadingscreenhandler.gd" id="4_ybdfn"]
 
 [sub_resource type="Animation" id="Animation_y0qkt"]
 length = 0.001
@@ -150,7 +149,6 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_e58dw")
 expand_mode = 1
-script = ExtResource("4_ybdfn")
 
 [node name="ProgressBar" type="ProgressBar" parent="ColorRect"]
 layout_mode = 1
@@ -212,4 +210,4 @@ libraries = {
 "": SubResource("AnimationLibrary_iygto")
 }
 
-[connection signal="pressed" from="ColorRect/Button" to="ColorRect" method="_on_button_pressed"]
+[connection signal="pressed" from="ColorRect/Button" to="." method="_on_button_pressed"]
