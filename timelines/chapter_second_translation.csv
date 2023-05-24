@@ -1,0 +1,38 @@
+keys,en
+Text/11/text,Maya opens the Financial Life app and starts exploring.
+Text/12/text,"""Hmm, let's see what this app has to offer. Maybe it will provide me with some useful advice."""
+Text/13/text,"Suddenly, a notification pops up on the screen, reminding her of a $75 payment for a trip."
+Text/14/text,Oh no... I only have $50 in my bank account. That's a significant amount.
+Text/15/text,"Maya starts using the app, entering her financial information and the issue with the trip"
+Text/16/text,The Financial Life app offers several financial advice options based on Maya's current situation.
+Text/17/text,"Advice 1: ""Consider finding an additional part-time job to earn the remaining amount."""
+Text/18/text,"""A part-time job, it’s like I don’t know that I need it, and I already have so much studying to do."""
+Text/19/text,"Advice 2: ""Evaluate your priorities. Assess how important this trip is for you at this moment."""
+Text/1a/text,"""To go or not to go... If I go, I could make new connections and strengthen my social position. But there are other aspects to consider..."""
+Text/1b/text,"At that moment, one of her roommates, Sarah, enters the room, visibly affected by the party that took place in their apartment the previous night."
+Text/1c/text,"Hey, Maya! Have you heard what happened last night? It was the craziest party!"
+Text/1d/text,"Oh, Sarah, I've heard ""as always""... But I need to focus on my tasks right now."
+Text/1e/text,"Oh, yeah, you always have something to do. Don't forget that life is not just about work and studies!"
+Text/1f/text,"""Sarah is always so carefree... But she's right, life is not just about work and studies. But how do I find a balance?"""
+Text/20/text,"Listen, Maya, you need to relax and enjoy life. This trip could be your chance to take a break from all these academic and financial problems."
+Text/21/text,"But I don’t have enough, and I'll have to borrow money. I don't want to dive into even bigger financial difficulties."
+Text/22/text,"Money comes and goes, Maya. But opportunities and experiences are what stay with you forever. You can make new connections, discover new places, and broaden your horizons."
+Text/23/text,"""She's right, of course, and how she can be so careless and yet so smart? After all, I have a little bit of free time right now. Maybe I do deserve a small break."""
+Text/24/text,"Ok just thing about what i said, anyway I have to go, bye!"
+Text/25/text,"""Yes, it could be a chance to relax and enjoy life. But it's also important for me to focus on my studies and financial stability. Perhaps there are other ways to find relaxation and entertainment without spending a lot of money..."""
+Text/26/text,"Maya picked up her phone and dialed Emily's number. After a few seconds, the call was answered."
+Text/27/text,"Hey, Emily! Could you help me with some money? I've encountered a problematic situation."
+Text/28/text,"Hi, Maya! Of course, I'm ready to help. What happened? Tell me."
+Text/29/text,"I urgently need money to pay for a trip that costs $75. I only have $50 in my account, and I don't know what to do."
+Text/2a/text,"I understand, Maya. That's really unfortunate. I have an idea. My friend in need of a shop assistant at the store where she works."
+Text/2b/text,"But you have to work without a contract. Although the pay is lower than usual, there might be some additional bonuses at work that could help you."
+Text/2c/text,"It's indeed a tough choice. A job without a contract and a lower salary... But I understand that it could be a temporary solution. I need to support my finances."""
+Text/2d/text,"Exactly, Maya. Sometimes we have to make such decisions to deal with tough situations. I'm sure you'll figure it out. You always find a way out of difficulties."
+Text/2e/text,"Choose which pass you go:
+(To select use arrow keys and enter)"
+Choice/2f/text,Borrow money for a trip now.
+Choice/2f/disabled_text,
+Text/30/text,"I think i will lend your money and for this trip, i will return money from my first salary"
+Text/31/text,Yeah no problem I’m always ready to help
+Choice/32/text,Don’t take money.
+Choice/32/disabled_text,

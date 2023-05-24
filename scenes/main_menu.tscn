@@ -1,15 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://f1s1ob1ollnj"]
+[gd_scene load_steps=8 format=3 uid="uid://f1s1ob1ollnj"]
 
 [ext_resource type="Theme" uid="uid://dpcpuqlxm11ek" path="res://themes/basic_ui.tres" id="1_7mbr3"]
 [ext_resource type="Script" path="res://scenes/main_menu.cs" id="2_s8wdl"]
 [ext_resource type="Texture2D" uid="uid://4h3anxi7cmsu" path="res://!!media/actualgame/backgrounds/background.png" id="3_52s3e"]
+[ext_resource type="Texture2D" uid="uid://dc84u6uv6cl7m" path="res://!!media/actualgame/backgrounds/cityv1.png" id="3_vx1ma"]
 
 [sub_resource type="Animation" id="Animation_esjgh"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BackGround/Menu:position")
+tracks/0/path = NodePath("Background/Menu:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -21,7 +22,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BackGround/Menu:modulate")
+tracks/1/path = NodePath("Background/Menu:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -37,7 +38,7 @@ length = 0.3
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BackGround/Menu:position")
+tracks/0/path = NodePath("Background/Menu:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -49,7 +50,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BackGround/Menu:modulate")
+tracks/1/path = NodePath("Background/Menu:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -75,7 +76,26 @@ grow_vertical = 2
 theme = ExtResource("1_7mbr3")
 script = ExtResource("2_s8wdl")
 
-[node name="BackGround" type="TextureRect" parent="."]
+[node name="Ending" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_vx1ma")
+expand_mode = 1
+
+[node name="Shade" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.588235)
+
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -85,7 +105,7 @@ grow_vertical = 2
 texture = ExtResource("3_52s3e")
 expand_mode = 1
 
-[node name="Menu" type="VBoxContainer" parent="BackGround"]
+[node name="Menu" type="VBoxContainer" parent="Background"]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -97,19 +117,19 @@ offset_bottom = 105.0
 grow_vertical = 2
 theme_override_constants/separation = 25
 
-[node name="StartButton" type="Button" parent="BackGround/Menu"]
+[node name="StartButton" type="Button" parent="Background/Menu"]
 layout_mode = 2
 text = "KEY_START"
 
-[node name="SettingsButton" type="Button" parent="BackGround/Menu"]
+[node name="SettingsButton" type="Button" parent="Background/Menu"]
 layout_mode = 2
 text = "KEY_SETTINGS"
 
-[node name="Credits" type="Button" parent="BackGround/Menu"]
+[node name="Credits" type="Button" parent="Background/Menu"]
 layout_mode = 2
 text = "KEY_CREDITS"
 
-[node name="ExitButton" type="Button" parent="BackGround/Menu"]
+[node name="ExitButton" type="Button" parent="Background/Menu"]
 layout_mode = 2
 text = "KEY_EXIT"
 
@@ -120,7 +140,7 @@ libraries = {
 "": SubResource("AnimationLibrary_12x46")
 }
 
-[connection signal="pressed" from="BackGround/Menu/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="BackGround/Menu/SettingsButton" to="." method="_on_settings_button_pressed"]
-[connection signal="pressed" from="BackGround/Menu/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="BackGround/Menu/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Background/Menu/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Background/Menu/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Background/Menu/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Background/Menu/ExitButton" to="." method="_on_exit_button_pressed"]

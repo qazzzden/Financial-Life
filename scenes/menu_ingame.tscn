@@ -298,10 +298,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 60.0
-offset_top = 410.0
-offset_right = 306.0
-offset_bottom = 625.0
+offset_left = -900.0
+offset_top = -130.0
+offset_right = -654.0
+offset_bottom = 85.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 25
@@ -329,10 +329,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 428.0
-offset_top = 80.0
-offset_right = 1688.0
-offset_bottom = 697.0
+offset_left = -532.0
+offset_top = -460.0
+offset_right = 728.0
+offset_bottom = 157.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 40
@@ -427,6 +427,7 @@ text = "KEY_S5"
 horizontal_alignment = 1
 
 [node name="Auto saves" type="Label" parent="slidepanel/Save"]
+visible = false
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 text = "KEY_AUTOSAVE"
@@ -434,6 +435,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="2ndrow" type="HBoxContainer" parent="slidepanel/Save"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 15
@@ -516,10 +518,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 428.0
-offset_top = 80.0
-offset_right = 1688.0
-offset_bottom = 697.0
+offset_left = -532.0
+offset_top = -460.0
+offset_right = 728.0
+offset_bottom = 157.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 40
@@ -619,6 +621,7 @@ text = "KEY_S5"
 horizontal_alignment = 1
 
 [node name="Auto saves" type="Label" parent="slidepanel/Load"]
+visible = false
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 text = "KEY_AUTOSAVE"
@@ -626,6 +629,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="2ndrow" type="HBoxContainer" parent="slidepanel/Load"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/separation = 15

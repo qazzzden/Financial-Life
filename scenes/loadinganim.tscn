@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6o7bjo38j0sn"]
+[gd_scene load_steps=8 format=3 uid="uid://c6o7bjo38j0sn"]
 
 [ext_resource type="Script" path="res://scenes/loadinganim.gd" id="1_ger1f"]
 [ext_resource type="Texture2D" uid="uid://dv28bse53b3dk" path="res://icon.svg" id="2_32hqn"]
+[ext_resource type="Texture2D" uid="uid://4h3anxi7cmsu" path="res://!!media/actualgame/backgrounds/background.png" id="2_alu5n"]
 
 [sub_resource type="Animation" id="Animation_yeceu"]
 length = 0.001
@@ -108,14 +109,16 @@ libraries = {
 "": SubResource("AnimationLibrary_c1iq6")
 }
 
-[node name="Loadingproc" type="ColorRect" parent="."]
+[node name="Loadingproc" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.12549, 0.137255, 0.180392, 1)
+texture = ExtResource("2_alu5n")
+expand_mode = 1
+flip_v = true
 
 [node name="Progressgo" type="ProgressBar" parent="."]
 visible = false

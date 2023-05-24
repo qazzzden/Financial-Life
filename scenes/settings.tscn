@@ -10,7 +10,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BackGround/ApplyButton:visible")
+tracks/0/path = NodePath("Background/ApplyButton:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -22,7 +22,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BackGround/Art style:modulate")
+tracks/1/path = NodePath("Background/Art style:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -34,7 +34,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("BackGround/Skip Options:modulate")
+tracks/2/path = NodePath("Background/Skip Options:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -46,7 +46,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("BackGround/Display Options:modulate")
+tracks/3/path = NodePath("Background/Display Options:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -58,7 +58,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("BackGround/Music controls:modulate")
+tracks/4/path = NodePath("Background/Music controls:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -70,7 +70,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("BackGround/Language:modulate")
+tracks/5/path = NodePath("Background/Language:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -82,7 +82,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("BackGround/Language:position")
+tracks/6/path = NodePath("Background/Language:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -94,7 +94,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("BackGround/Music controls:position")
+tracks/7/path = NodePath("Background/Music controls:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -106,7 +106,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("BackGround/Display Options:position")
+tracks/8/path = NodePath("Background/Display Options:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -118,7 +118,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("BackGround/Skip Options:position")
+tracks/9/path = NodePath("Background/Skip Options:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -130,7 +130,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("BackGround/Art style:position")
+tracks/10/path = NodePath("Background/Art style:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -142,7 +142,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("BackGround/ApplyButton:modulate")
+tracks/11/path = NodePath("Background/ApplyButton:modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -159,7 +159,7 @@ step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BackGround/ApplyButton:visible")
+tracks/0/path = NodePath("Background/ApplyButton:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -171,7 +171,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BackGround/Art style:modulate")
+tracks/1/path = NodePath("Background/Art style:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -183,7 +183,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("BackGround/Skip Options:modulate")
+tracks/2/path = NodePath("Background/Skip Options:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -195,7 +195,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("BackGround/Display Options:modulate")
+tracks/3/path = NodePath("Background/Display Options:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -207,7 +207,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("BackGround/Music controls:modulate")
+tracks/4/path = NodePath("Background/Music controls:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -219,7 +219,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("BackGround/Language:modulate")
+tracks/5/path = NodePath("Background/Language:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -231,7 +231,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("BackGround/Language:position")
+tracks/6/path = NodePath("Background/Language:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -243,7 +243,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("BackGround/Music controls:position")
+tracks/7/path = NodePath("Background/Music controls:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -255,7 +255,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("BackGround/Display Options:position")
+tracks/8/path = NodePath("Background/Display Options:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -267,7 +267,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("BackGround/Skip Options:position")
+tracks/9/path = NodePath("Background/Skip Options:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -279,7 +279,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("BackGround/Art style:position")
+tracks/10/path = NodePath("Background/Art style:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -291,7 +291,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("BackGround/ApplyButton:modulate")
+tracks/11/path = NodePath("Background/ApplyButton:modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -317,7 +317,7 @@ grow_vertical = 2
 theme = ExtResource("1_p4g2t")
 script = ExtResource("1_t7u3p")
 
-[node name="BackGround" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -327,21 +327,21 @@ grow_vertical = 2
 texture = ExtResource("3_reigc")
 expand_mode = 1
 
-[node name="Language" type="Control" parent="BackGround"]
+[node name="Language" type="Control" parent="Background"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -750.0
-offset_top = -150.0
-offset_right = -450.0
-offset_bottom = 150.001
+offset_left = 210.0
+offset_top = 390.0
+offset_right = 510.0
+offset_bottom = 690.001
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Language"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/Language"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -350,46 +350,46 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 5
 
-[node name="Name of section" type="Label" parent="BackGround/Language/VBoxContainer"]
+[node name="Name of section" type="Label" parent="Background/Language/VBoxContainer"]
 layout_mode = 2
 text = "KEY_LANG"
 horizontal_alignment = 1
 
-[node name="Spacing" type="Control" parent="BackGround/Language/VBoxContainer"]
+[node name="Spacing" type="Control" parent="Background/Language/VBoxContainer"]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="BackGround/Language/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/Language/VBoxContainer"]
 layout_mode = 2
 
-[node name="Auto skip" type="Label" parent="BackGround/Language/VBoxContainer/HBoxContainer"]
+[node name="Auto skip" type="Label" parent="Background/Language/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(175, 35)
 layout_mode = 2
 text = "KEY_LANG"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CheckBox" type="OptionButton" parent="BackGround/Language/VBoxContainer/HBoxContainer"]
+[node name="CheckBox" type="OptionButton" parent="Background/Language/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 auto_translate = false
 theme_override_font_sizes/font_size = 20
 flat = true
 
-[node name="Music controls" type="Control" parent="BackGround"]
+[node name="Music controls" type="Control" parent="Background"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -450.0
-offset_top = -150.0
-offset_right = -150.0
-offset_bottom = 150.001
+offset_left = 510.0
+offset_top = 390.0
+offset_right = 810.0
+offset_bottom = 690.001
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Music controls"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/Music controls"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -398,53 +398,53 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 5
 
-[node name="Name of section" type="Label" parent="BackGround/Music controls/VBoxContainer"]
+[node name="Name of section" type="Label" parent="Background/Music controls/VBoxContainer"]
 layout_mode = 2
 text = "KEY_AUDIO"
 horizontal_alignment = 1
 
-[node name="Spacing" type="Control" parent="BackGround/Music controls/VBoxContainer"]
+[node name="Spacing" type="Control" parent="Background/Music controls/VBoxContainer"]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
-[node name="Music Volume" type="Label" parent="BackGround/Music controls/VBoxContainer"]
+[node name="Music Volume" type="Label" parent="Background/Music controls/VBoxContainer"]
 custom_minimum_size = Vector2(175, 35)
 layout_mode = 2
 text = "KEY_MV"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MusicCtrl" type="HSlider" parent="BackGround/Music controls/VBoxContainer"]
+[node name="MusicCtrl" type="HSlider" parent="Background/Music controls/VBoxContainer"]
 layout_mode = 2
 value = 50.0
 
-[node name="Sound Volume" type="Label" parent="BackGround/Music controls/VBoxContainer"]
+[node name="Sound Volume" type="Label" parent="Background/Music controls/VBoxContainer"]
 custom_minimum_size = Vector2(175, 35)
 layout_mode = 2
 text = "KEY_SV"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SoundCtrl" type="HSlider" parent="BackGround/Music controls/VBoxContainer"]
+[node name="SoundCtrl" type="HSlider" parent="Background/Music controls/VBoxContainer"]
 layout_mode = 2
 value = 50.0
 
-[node name="Display Options" type="Control" parent="BackGround"]
+[node name="Display Options" type="Control" parent="Background"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -150.0
-offset_right = 150.0
-offset_bottom = 150.001
+offset_left = 810.0
+offset_top = 390.0
+offset_right = 1110.0
+offset_bottom = 690.001
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Display Options"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/Display Options"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -453,20 +453,20 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 5
 
-[node name="Name of section" type="Label" parent="BackGround/Display Options/VBoxContainer"]
+[node name="Name of section" type="Label" parent="Background/Display Options/VBoxContainer"]
 layout_mode = 2
 text = "KEY_DISPLAY"
 horizontal_alignment = 1
 
-[node name="Spacing" type="Control" parent="BackGround/Display Options/VBoxContainer"]
+[node name="Spacing" type="Control" parent="Background/Display Options/VBoxContainer"]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="BackGround/Display Options/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/Display Options/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="ResolutionDownButton" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer"]
+[node name="ResolutionDownButton" type="Button" parent="Background/Display Options/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_gjx8i")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -476,14 +476,14 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 text = "<"
 flat = true
 
-[node name="WindowsizeLabel" type="Label" parent="BackGround/Display Options/VBoxContainer/HBoxContainer"]
+[node name="WindowsizeLabel" type="Label" parent="Background/Display Options/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(175, 35)
 layout_mode = 2
 text = "testin1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ResolutionUpButton" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer"]
+[node name="ResolutionUpButton" type="Button" parent="Background/Display Options/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_gjx8i")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -493,11 +493,11 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 text = ">"
 flat = true
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="BackGround/Display Options/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="Background/Display Options/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Fullscreendown" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer2"]
+[node name="Fullscreendown" type="Button" parent="Background/Display Options/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 theme = ExtResource("3_gjx8i")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -507,14 +507,14 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 text = "<"
 flat = true
 
-[node name="FullscreenLabel" type="Label" parent="BackGround/Display Options/VBoxContainer/HBoxContainer2"]
+[node name="FullscreenLabel" type="Label" parent="Background/Display Options/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(175, 35)
 layout_mode = 2
 text = "testin1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Fullscreenup" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer2"]
+[node name="Fullscreenup" type="Button" parent="Background/Display Options/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 theme = ExtResource("3_gjx8i")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -524,11 +524,11 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 text = ">"
 flat = true
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="BackGround/Display Options/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="Background/Display Options/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Vsyncdown" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer3"]
+[node name="Vsyncdown" type="Button" parent="Background/Display Options/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 theme = ExtResource("3_gjx8i")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -538,14 +538,14 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 text = "<"
 flat = true
 
-[node name="VsyncLabel" type="Label" parent="BackGround/Display Options/VBoxContainer/HBoxContainer3"]
+[node name="VsyncLabel" type="Label" parent="Background/Display Options/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(175, 35)
 layout_mode = 2
 text = "testin1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Vsyncscreenup" type="Button" parent="BackGround/Display Options/VBoxContainer/HBoxContainer3"]
+[node name="Vsyncscreenup" type="Button" parent="Background/Display Options/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 theme = ExtResource("3_gjx8i")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -555,21 +555,21 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 text = ">"
 flat = true
 
-[node name="Skip Options" type="Control" parent="BackGround"]
+[node name="Skip Options" type="Control" parent="Background"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 150.0
-offset_top = -150.0
-offset_right = 450.0
-offset_bottom = 150.0
+offset_left = 1110.0
+offset_top = 390.0
+offset_right = 1410.0
+offset_bottom = 690.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Skip Options"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/Skip Options"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -578,43 +578,43 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 5
 
-[node name="Name of section" type="Label" parent="BackGround/Skip Options/VBoxContainer"]
+[node name="Name of section" type="Label" parent="Background/Skip Options/VBoxContainer"]
 layout_mode = 2
 text = "KEY_TEXT_SET"
 horizontal_alignment = 1
 
-[node name="Spacing" type="Control" parent="BackGround/Skip Options/VBoxContainer"]
+[node name="Spacing" type="Control" parent="Background/Skip Options/VBoxContainer"]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="BackGround/Skip Options/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/Skip Options/VBoxContainer"]
 layout_mode = 2
 
-[node name="Auto skip" type="Label" parent="BackGround/Skip Options/VBoxContainer/HBoxContainer"]
+[node name="Auto skip" type="Label" parent="Background/Skip Options/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(175, 35)
 layout_mode = 2
 text = "KEY_AUTOSKIP"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CheckBox" type="CheckBox" parent="BackGround/Skip Options/VBoxContainer/HBoxContainer"]
+[node name="CheckBox" type="CheckBox" parent="Background/Skip Options/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 
-[node name="Art style" type="Control" parent="BackGround"]
+[node name="Art style" type="Control" parent="Background"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 450.0
-offset_top = -150.0
-offset_right = 750.0
-offset_bottom = 150.001
+offset_left = 1410.0
+offset_top = 390.0
+offset_right = 1710.0
+offset_bottom = 690.001
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="BackGround/Art style"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/Art style"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -623,20 +623,20 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 5
 
-[node name="Name of section" type="Label" parent="BackGround/Art style/VBoxContainer"]
+[node name="Name of section" type="Label" parent="Background/Art style/VBoxContainer"]
 layout_mode = 2
 text = "KEY_ART"
 horizontal_alignment = 1
 
-[node name="Spacing" type="Control" parent="BackGround/Art style/VBoxContainer"]
+[node name="Spacing" type="Control" parent="Background/Art style/VBoxContainer"]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="BackGround/Art style/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/Art style/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="ArtDownButton" type="Button" parent="BackGround/Art style/VBoxContainer/HBoxContainer"]
+[node name="ArtDownButton" type="Button" parent="Background/Art style/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_gjx8i")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -646,14 +646,14 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 text = "<"
 flat = true
 
-[node name="ArtLabel" type="Label" parent="BackGround/Art style/VBoxContainer/HBoxContainer"]
+[node name="ArtLabel" type="Label" parent="Background/Art style/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(175, 35)
 layout_mode = 2
 text = "testin1"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ArtUpButton" type="Button" parent="BackGround/Art style/VBoxContainer/HBoxContainer"]
+[node name="ArtUpButton" type="Button" parent="Background/Art style/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("3_gjx8i")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -663,7 +663,7 @@ theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
 text = ">"
 flat = true
 
-[node name="Menu" type="Button" parent="BackGround"]
+[node name="Menu" type="Button" parent="Background"]
 layout_mode = 0
 offset_left = 60.0
 offset_top = 30.0
@@ -671,7 +671,7 @@ offset_right = 245.0
 offset_bottom = 70.0
 text = "KEY_MENU_BACK"
 
-[node name="ApplyButton" type="Button" parent="BackGround"]
+[node name="ApplyButton" type="Button" parent="Background"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -692,16 +692,16 @@ libraries = {
 "": SubResource("AnimationLibrary_757jd")
 }
 
-[connection signal="item_selected" from="BackGround/Language/VBoxContainer/HBoxContainer/CheckBox" to="." method="_on_check_box_item_selected"]
-[connection signal="value_changed" from="BackGround/Music controls/VBoxContainer/MusicCtrl" to="." method="_on_music_ctrl_value_changed"]
-[connection signal="value_changed" from="BackGround/Music controls/VBoxContainer/SoundCtrl" to="." method="_on_sound_ctrl_value_changed"]
-[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer/ResolutionDownButton" to="." method="_on_resolution_down_button_pressed"]
-[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer/ResolutionUpButton" to="." method="_on_resolution_up_button_pressed"]
-[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer2/Fullscreendown" to="." method="_on_fullscreendown_pressed"]
-[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer2/Fullscreenup" to="." method="_on_fullscreenup_pressed"]
-[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer3/Vsyncdown" to="." method="_on_vsyncdown_pressed"]
-[connection signal="pressed" from="BackGround/Display Options/VBoxContainer/HBoxContainer3/Vsyncscreenup" to="." method="_on_vsyncscreenup_pressed"]
-[connection signal="pressed" from="BackGround/Art style/VBoxContainer/HBoxContainer/ArtDownButton" to="." method="_on_art_down_button_pressed"]
-[connection signal="pressed" from="BackGround/Art style/VBoxContainer/HBoxContainer/ArtUpButton" to="." method="_on_art_up_button_pressed"]
-[connection signal="pressed" from="BackGround/Menu" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="BackGround/ApplyButton" to="." method="_on_apply_button_pressed"]
+[connection signal="item_selected" from="Background/Language/VBoxContainer/HBoxContainer/CheckBox" to="." method="_on_check_box_item_selected"]
+[connection signal="value_changed" from="Background/Music controls/VBoxContainer/MusicCtrl" to="." method="_on_music_ctrl_value_changed"]
+[connection signal="value_changed" from="Background/Music controls/VBoxContainer/SoundCtrl" to="." method="_on_sound_ctrl_value_changed"]
+[connection signal="pressed" from="Background/Display Options/VBoxContainer/HBoxContainer/ResolutionDownButton" to="." method="_on_resolution_down_button_pressed"]
+[connection signal="pressed" from="Background/Display Options/VBoxContainer/HBoxContainer/ResolutionUpButton" to="." method="_on_resolution_up_button_pressed"]
+[connection signal="pressed" from="Background/Display Options/VBoxContainer/HBoxContainer2/Fullscreendown" to="." method="_on_fullscreendown_pressed"]
+[connection signal="pressed" from="Background/Display Options/VBoxContainer/HBoxContainer2/Fullscreenup" to="." method="_on_fullscreenup_pressed"]
+[connection signal="pressed" from="Background/Display Options/VBoxContainer/HBoxContainer3/Vsyncdown" to="." method="_on_vsyncdown_pressed"]
+[connection signal="pressed" from="Background/Display Options/VBoxContainer/HBoxContainer3/Vsyncscreenup" to="." method="_on_vsyncscreenup_pressed"]
+[connection signal="pressed" from="Background/Art style/VBoxContainer/HBoxContainer/ArtDownButton" to="." method="_on_art_down_button_pressed"]
+[connection signal="pressed" from="Background/Art style/VBoxContainer/HBoxContainer/ArtUpButton" to="." method="_on_art_up_button_pressed"]
+[connection signal="pressed" from="Background/Menu" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Background/ApplyButton" to="." method="_on_apply_button_pressed"]

@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://f0trsipc5xu"]
+[gd_scene load_steps=2 format=3 uid="uid://f0trsipc5xu"]
 
 [ext_resource type="Script" path="res://scenes/game_load.gd" id="1_v5c37"]
-[ext_resource type="PackedScene" uid="uid://bsnexhpt3225x" path="res://oksdaddyd/CustomDefaultLayout/custom_DialogicDefaultLayout.tscn" id="2_hwffa"]
 
 [node name="Game" type="Control"]
 layout_mode = 3
@@ -11,5 +10,3 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_v5c37")
-
-[node name="DefaultDialogNode" parent="." instance=ExtResource("2_hwffa")]

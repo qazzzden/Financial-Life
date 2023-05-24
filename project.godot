@@ -27,10 +27,10 @@ BackGroundMusicqazzz="*res://scenes/back_ground_music.tscn"
 editor/character_preview_mode=0
 editor/current_editor=&"Timeline Editor"
 editor/current_resources={
-"Character Editor": "res://characters/Maya.dch",
-"Timeline Editor": "res://timelines/firstchapter.dtl"
+"Character Editor": "res://characters/Shop owner.dch",
+"Timeline Editor": "res://timelines/chapter_second.dtl"
 }
-editor/last_resources=PackedStringArray("res://timelines/firstchapter.dtl", "res://characters/Maya.dch", "res://timelines/fullgame.dtl", "res://characters/Emily.dch", "res://characters/Lector.dch", "res://timelines/timeline(handart).dtl", "res://timelines/firstchapter(handart).dtl")
+editor/last_resources=PackedStringArray("res://timelines/firstchapter.dtl", "res://characters/Maya.dch", "res://timelines/fullgame.dtl", "res://characters/Emily.dch", "res://characters/Lector.dch", "res://timelines/timeline(handart).dtl", "res://timelines/firstchapter(handart).dtl", "res://characters/God.dch", "res://characters/Roommate.dch", "res://timelines/chapter_second.dtl", "res://characters/Shop owner.dch", "res://characters/Financial Life.dch", "res://characters/Sarah.dch", "")
 animations/join_default_length=0.5
 animations/leave_default_length=0.5
 animations/leave_default_wait=true
@@ -42,7 +42,7 @@ text/speed=0.01
 text/skippable=true
 text/autocontinue_delay=1.0
 editor/visual_timeline_editor_sidebar=200.0
-editor/last/resources=["res://timelines/firstchapter.dtl", "res://characters/Maya.dch", "res://timelines/fullgame.dtl", "res://characters/Emily.dch", "res://characters/Lector.dch", "res://timelines/timeline(handart).dtl", "res://timelines/firstchapter(handart).dtl"]
+editor/last/resources=["res://timelines/firstchapter.dtl", "res://characters/Maya.dch", "res://timelines/fullgame.dtl", "res://characters/Emily.dch", "res://characters/Lector.dch", "res://timelines/timeline(handart).dtl", "res://timelines/firstchapter(handart).dtl", "res://characters/God.dch", "res://characters/Roommate.dch", "res://timelines/chapter_second.dtl", "res://characters/Shop owner.dch", "res://characters/Financial Life.dch", "res://characters/Sarah.dch"]
 glossary/default_case_sensitive=true
 save/default_slot="0"
 save/autosave=false
@@ -50,17 +50,25 @@ history/simple_history_enabled=true
 history/full_history_enabled=true
 history/already_read_history_enabled=true
 layout/mode=1
-variables={}
+variables={
+"MoneySave1": "0",
+"MoneySave2": "0",
+"MoneySave3": "0",
+"MoneySave4": "0",
+"MoneySave5": "0",
+"TempMoney": "0",
+"Trip": "0"
+}
 layout/layout_scene="res://oksdaddyd/CustomDefaultLayout/custom_DialogicDefaultLayout.tscn"
-translation/enabled=false
+translation/enabled=true
 translation/original_locale="en"
 translation/file_mode=0
 translation/translation_folder="res://translations"
 text/autocontinue=false
 save/autosave_mode=1
 editor/timeline_editor_mode=0
-editor/current_timeline_path="res://timelines/firstchapter(handart).dtl"
-translation/id_counter=16
+editor/current_timeline_path="res://timelines/chapter_second.dtl"
+translation/id_counter=108
 
 [display]
 
@@ -97,4 +105,4 @@ esc={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://translation.en.translation", "res://translation.ru.translation")
+locale/translations=PackedStringArray("res://translation.en.translation", "res://translation.ru.translation", "res://timelines/chapter_second_translation.en.translation", "res://timelines/firstchapter(handart)_translation.en.translation", "res://timelines/firstchapter_translation.en.translation", "res://timelines/fullgame_translation.en.translation", "res://timelines/timeline(handart)_translation.en.translation", "res://timelines/fullgame_translation.ru.translation")

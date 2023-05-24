@@ -10,11 +10,20 @@ public partial class load_startnew : Control
 	public TextureButton load4;
 	public TextureButton load5;
 	public Node loadi;
+	public Node bgloadi;
 	public AnimationPlayer anim;
+	
+	public TextureRect backgd;
+	public TextureRect endgd;
 
 	public override void _Ready()
 	{
+		backgd = GetNode<TextureRect>("Background");
+		endgd = GetNode<TextureRect>("Ending");
+		
 		loadi = GetNode<Node>("/root/Loadingqazzz");
+		bgloadi=GetNode<Node>("/root/Loadingscreenqazzz");
+		
 		loadscreen = GetNode<VBoxContainer>("Background/Load");
 		load1 = GetNode<TextureButton>("Background/Load/1strow/VBoxContainer/ManLoadBtn1");
 		load2 = GetNode<TextureButton>("Background/Load/1strow/VBoxContainer2/ManLoadBtn2");
@@ -25,6 +34,8 @@ public partial class load_startnew : Control
 		anim = GetNode<AnimationPlayer>("Appear");
 		
 		Godot.TextureButton[] saves={load1,load2,load3,load4,load5};
+		
+		bgloadi.Call("backgroundhandler",backgd,endgd);
 		
 		for (int i = 1; i < 6; i++)
 		{

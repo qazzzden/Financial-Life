@@ -1,6 +1,12 @@
-The game began
+[background arg="res://!!media/backgrounds/citytop.png"]
+God: Here in this average-looking town in the poor-looking dorm lives an average student named Maya #id:66
+God: Oh alarm went off we must hurry #id:67
+[sound path="res://!!media/sound/alarm.wav"]
 [jump timeline="firstchapter" label="firstchapter"]
 [label name="firstend"]
-you won!
-gdgdgdgdg
+[jump timeline="chapter_second" label="chapte_second"]
+[label name="end_second"]
+[background arg="res://!!media/backgrounds/citytop.png"]
+God: you won! #id:68
+God: gdgdgdgdg #id:69
 [end_timeline]

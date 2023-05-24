@@ -1,31 +1,43 @@
 [label name="firstchapter"]
-Maya: Alarm sound
-Maya: *Aaahhh*
-[background arg="res://!!media/backgrounds/maya_home.png"]
-bip bip
-Maya: Oh I have a financial lecture today must hurry up
+[background arg="res://!!media/backgrounds/black.png" fade="0.2"]
+Maya: *Aaahhh* #id:48
+[background arg="res://!!media/backgrounds/Maya_room.png" fade="0.2"]
 Join Maya 3
-Heh one more day started, just
+Maya: "Ah, morning... The finance lecture starts in an hour. I must hurry up, please just don’t interrupt me this time" #id:49
+God: Maya gets out of bed carefully, trying not to wake her roommates. #id:4a
+Maya: "My room is always neat and clean. Let’s keep it this way." #id:4b
+God: Maya approaches her desk, turns on her laptop, and tries to connect to Wi-Fi, but with no success. #id:4c
+Maya: "Wi-Fi problems again... Why is it always like this? Well, never mind, I have a book version for this." #id:4d
+God: Maya takes the book out of her backpack and opens it, preparing for the lecture. #id:4e
+Update Maya 3 [animation="Tada" wait="true"]
+Roommate: "Oh my God, yesterday . . . so much fun! I'm so tired. . ." #id:4f
+Roommate: "Yeah, me too... These weekends never end. . . call her?" #id:50
+God: Maya swallows her irritation and focuses on reading. #id:51
+God: Maya exits her room, closing the door. #id:52
 Leave Maya
-[background arg="res://!!media/backgrounds/black.png" fade="1.0"]
-Lector: ...
-Noize
-[background arg="res://!!media/backgrounds/seminar.png"]
-Join Maya 4 [animation="Bounce In" mirrored="true"]
-Join Emily 1 [animation="Bounce In"]
-Emily: *Hi Maya how are you doing!*
-Maya: *I’m fine, hopefully these tips will make some good of them*
-Emily: *You know about an app that help with finances that was going around*
-Emily: *It gives better tips*
-Maya: *No, actually don’t have time to check something new*
-Emily: *You know i got no problem with money this days this app so good*
-Emily: *I even attended  this lecture to check if its going to be better turn out no app is still the best*
-Emily: *It really helps me to manage finances I will give you a link check it out*
-Maya: *Yep thanks*
-Maya: Will i have time or not only my part-time job will decied
-Emily: *Don’t forget to add me you can actually share the game screen with somebody to help each other or discuss difficult part*
-Maya: *Interesting feature, I will definitely download it*
-Maya: *Oh I have to go, see you later*
-Maya: *Yeah bye*
+Maya: Come on, Maya, you can handle this. Concentrate on the lecture and let’s push financial problems away for now at least. #id:53
+[background arg="res://!!media/backgrounds/citytop.png" fade="0.2"]
+Lector: . . . Remember, financial literacy is a lifelong process, and the more you educate yourself, the better equipped you'll be to make informed financial decisions. #id:54
+Lector: Thank you all for attending, and have a great day! #id:55
+[background arg="res://!!media/backgrounds/hallv1.png"]
+Join Maya 4
+Maya: "Oh, that lecture was intense. Finance is not the easiest topic." #id:56
+Join Emily 1 [animation="Bounce In" length="0.4" wait="true"]
+Emily: Hey, Maya! How are you doing, how was the lecture? #id:57
+Maya: Hey, Emily. Well, I’m good, lecture wasn't easy, but I tried to grasp all the important points. #id:58
+Emily: I know finance can be challenging. By the way, I have this super helpful app that might assist you. It's called Financial Life. #id:59
+God: Maya looks at Emily with some skepticism. #id:5a
+Maya: Financial Life? Sounds like a stock trading program. I'm not sure if you want to help me or bury even deeper. #id:5b
+Emily: No, no, it's not about trading ha-ha. Financial Life is an app designed to assist in financial situations. #id:5c
+Emily: It provides useful advice and helps with budget planning. It really helped me, believe me. #id:5d
+God: Maya is still cautiously thinking about this app but decides to give it a chance. #id:5e
+Maya: Alright, I'll give it a try. At least to see what it offers. #id:5f
+Emily: Great! I'm sure you'll like it. Go ahead, download it, and see what advice it provides. #id:60
+God: Suddenly, Maya remembers urgent tasks she has to do. #id:61
+Maya: Oops, sorry, Emily, I have some urgent matters to attend to. I need to leave immediately. But thanks for the recommendation, I'll definitely check the app. #id:62
+Emily: No problem, Maya. Good luck with your tasks! Be sure to let me know about your experience with Financial Life #id:63
+God: Maya waves goodbye and hurries off. #id:64
 Leave --All--
+[background arg="res://!!media/backgrounds/citytop.png"]
+Maya: "Financial Life... Maybe it can help me heh." #id:65
 [jump timeline="fullgame" label="firstend"]

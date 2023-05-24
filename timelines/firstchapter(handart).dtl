@@ -1,31 +1,31 @@
 [label name="firstchapter"]
-Maya (maya(handart)): Alarm sound
-Maya: *Aaahhh*
+Maya (maya(handart)): Alarm sound #id:33
+Maya: *Aaahhh* #id:34
 [background arg="res://!!media/backgrounds/maya_home.png"]
-bip bip
-Maya: Oh I have a financial lecture today must hurry up
+bip bip #id:35
+Maya: Oh I have a financial lecture today must hurry up #id:36
 Join Maya (maya(handart)) 3
-Heh one more day started, just
+Heh one more day started, just #id:37
 Leave Maya
 [background arg="res://!!media/backgrounds/black.png" fade="1.0"]
-Lector: ...
-Noize
+Lector: ... #id:38
+Noize #id:39
 [background arg="res://!!media/backgrounds/seminar.png"]
 Join Maya (maya(handart)) 4 [animation="Bounce In" mirrored="true"]
 Join Emily 1 [animation="Bounce In"]
-Emily: *Hi Maya how are you doing!*
-Maya: *I’m fine, hopefully these tips will make some good of them*
-Emily: *You know about an app that help with finances that was going around*
-Emily: *It gives better tips*
-Maya: *No, actually don’t have time to check something new*
-Emily: *You know i got no problem with money this days this app so good*
-Emily: *I even attended  this lecture to check if its going to be better turn out no app is still the best*
-Emily: *It really helps me to manage finances I will give you a link check it out*
-Maya: *Yep thanks*
-Maya: Will i have time or not only my part-time job will decied
-Emily: *Don’t forget to add me you can actually share the game screen with somebody to help each other or discuss difficult part*
-Maya: *Interesting feature, I will definitely download it*
-Maya: *Oh I have to go, see you later*
-Maya: *Yeah bye*
+Emily: *Hi Maya how are you doing!* #id:3a
+Maya: *I’m fine, hopefully these tips will make some good of them* #id:3b
+Emily: *You know about an app that help with finances that was going around* #id:3c
+Emily: *It gives better tips* #id:3d
+Maya: *No, actually don’t have time to check something new* #id:3e
+Emily: *You know i got no problem with money this days this app so good* #id:3f
+Emily: *I even attended  this lecture to check if its going to be better turn out no app is still the best* #id:40
+Emily: *It really helps me to manage finances I will give you a link check it out* #id:41
+Maya: *Yep thanks* #id:42
+Maya: Will i have time or not only my part-time job will decied #id:43
+Emily: *Don’t forget to add me you can actually share the game screen with somebody to help each other or discuss difficult part* #id:44
+Maya: *Interesting feature, I will definitely download it* #id:45
+Maya: *Oh I have to go, see you later* #id:46
+Maya: *Yeah bye* #id:47
 Leave --All--
 [jump timeline="timeline(handart)" label="firstend"]

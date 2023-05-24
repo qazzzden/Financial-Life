@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b6tnyt4yvry1v"
+
+[deps]
+
+files=["res://timelines/firstchapter(handart)_translation.en.translation"]
+
+source_file="res://timelines/firstchapter(handart)_translation.csv"
+dest_files=["res://timelines/firstchapter(handart)_translation.en.translation"]
+
+[params]
+
+compress=true
+delimiter=0

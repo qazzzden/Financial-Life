@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bogmu32klygt6"
+
+[deps]
+
+files=["res://timelines/timeline(handart)_translation.en.translation"]
+
+source_file="res://timelines/timeline(handart)_translation.csv"
+dest_files=["res://timelines/timeline(handart)_translation.en.translation"]
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,13 +1,27 @@
 using Godot;
 using System;
 
+
+
+
 public partial class main_menu : Node
 {
 	public Node loadi;
+	public Node bgloadi;
 	
+	public TextureRect backgd;
+	public TextureRect endgd;
+	
+
 	public override void _Ready()
 	{
+		backgd = GetNode<TextureRect>("Background");
+		endgd = GetNode<TextureRect>("Ending");
+		
 		loadi = GetNode<Node>("/root/Loadingqazzz");
+		bgloadi=GetNode<Node>("/root/Loadingscreenqazzz");
+		
+		bgloadi.Call("backgroundhandler",backgd,endgd);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

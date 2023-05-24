@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dksqryhljp65j"
+
+[deps]
+
+files=["res://timelines/fullgame_translation.en.translation", "res://timelines/fullgame_translation.ru.translation"]
+
+source_file="res://timelines/fullgame_translation.csv"
+dest_files=["res://timelines/fullgame_translation.en.translation", "res://timelines/fullgame_translation.ru.translation"]
+
+[params]
+
+compress=true
+delimiter=0

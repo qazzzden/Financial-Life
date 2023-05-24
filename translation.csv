@@ -29,3 +29,23 @@ KEY_FULLS,Fullscreen,Полноэкранный
 KEY_WINDOWED,Windowed,Оконный
 KEY_ARTSTYLE1,AI generated,AI
 KEY_ARTSTYLE2,Hand art,Авторский
+KEY_CURMON,Bank account:,Банковский счет:
+KEY_END,GG YOU WON!,ПОЗДРАВЛЯЮ ПОБЕДА!
+KEY_MONTH,Month:,Месяц:
+KEY_TOTAL,Total:,Всего:
+KEY_SALARY,Salary:,Зарплата:
+KEY_FLAT,Flat:,Жильё:
+KEY_FOOD,Food:,Еда:
+,,
+KEY_APRIL,April,Апрель
+KEY_JAN,January,Январь
+KEY_FEB,February,Февраль
+KEY_MARCH,March,Март
+KEY_MAY,May,Май
+KEY_JUNE,June,Июнь
+KEY_JULY,July,Июль
+KEY_AUG,August,Август
+KEY_SEP,September,Сентябрь
+KEY_OCT,October,Октябрь
+KEY_NOV,November,Ноябрь
+KEY_DEC,December,Декабрь

@@ -78,6 +78,7 @@ func visibler():
 		
 		var total_time = Time.get_ticks_msec() - time_before
 		print("Time taken to open overlay: " + str(total_time))
+		print("")
 
 func _on_button_pressed():
 	visibler()
@@ -106,22 +107,28 @@ func savebtn(data):
 	var imgtesting=Image.new()
 	imgtesting.load_png_from_buffer(testingbuffer)
 	var tex=ImageTexture.create_from_image(imgtesting)
-	#manloading[data-1].texture_normal=tex
-	#mansaving[data-1].texture_normal=tex
 	imgtesting.save_png('res://savingpictures/mansavepic'+str(data)+'.png')
-	manloading[data-1].texture_normal=load('res://savingpictures/mansavepic'+str(data)+'.png')
-	mansaving[data-1].texture_normal=load('res://savingpictures/mansavepic'+str(data)+'.png')
-	var gameinfo=Dialogic.get_full_state()
+	manloading[data-1].texture_normal=tex
+	mansaving[data-1].texture_normal=tex
+	#manloading[data-1].texture_normal=load('res://savingpictures/mansavepic'+str(data)+'.png')
+	#mansaving[data-1].texture_normal=load('res://savingpictures/mansavepic'+str(data)+'.png')
 	Dialogic.Save.save(str(data))
 	#Dialogic.Save.save_file(str(data), 'GameData.txt', gameinfo)
+	var names="S"+str(data)+"m"
+	save_file.names=Dialogic.VAR.TempMoney
+	Loadingqazzz.save_data()
+	print("While saving:")
+	print("In save "+str(names)+": "+str(Dialogic.VAR.TempMoney)+" money")
+	print("")
 
 func laodbtn(data):	
 	Dialogic.Save.load(str(data))
-	#visibler()
-	#Loadingqazzz.loads=str(data)
-	#Loadingqazzz.scener="res://scenes/game_load.tscn"
-	#get_tree().change_scene_to_file("res://scenes/loadinganim.tscn")
-	#Dialogic.Save.load_file(str(data), 'GameData.txt', {})
+	var names="S"+str(data)+"m"
+	print(names)
+	Dialogic.VAR.TempMoney=str(save_file.names)
+	print("While loading:")
+	print("In save "+str(names)+": "+str(Dialogic.VAR.TempMoney)+" money")
+	print("")
 
 func _on_man_save_btn_1_pressed():
 	savebtn(1)
